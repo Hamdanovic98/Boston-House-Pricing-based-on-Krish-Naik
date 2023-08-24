@@ -1,0 +1,14 @@
+{
+  "name": "My Dev Container",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": ".."
+  },
+  "extensions": [
+    "ms-python.python"
+  ],
+  "workspaceMount": "source=${localWorkspaceFolder},target=/app,type=bind,consistency=delegated",
+  "settings": {
+    "terminal.integrated.defaultProfile.linux": "bash"
+  }
+}
